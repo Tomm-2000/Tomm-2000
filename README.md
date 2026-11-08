@@ -13,8 +13,8 @@
 - [Haar Face & Eye Detection](https://github.com/Tomm-2000/haar-face-eye-detection)
 - [Digital Image Processing](https://github.com/Tomm-2000/digital-image-processing)
 - [K-Means Image Segmentation](https://github.com/Tomm-2000/kmeans-image-segmentation)
-- Building Damage Assessment
-- CIFAR-10 Classification
+- [Building Damage Assessment](https://github.com/Tomm-2000/building-damage-assessment)
+- - CIFAR-10 Classification
 
 ## Machine Learning & Statistics
 
