@@ -21,6 +21,7 @@
 - [Movie Recommendation System](https://github.com/W0LF37/Movie-Recommendation-System)
 - [AI Music Generation](https://github.com/Tomm-2000/CodeAlpha_MusicGeneration)
 - [Applied Statistics](https://github.com/Tomm-2000/applied-statistics)
+- [Speech Emotion Recognition](https://github.com/Tomm-2000/speech-emotion-recognition) — Speech emotion classification using Wav2Vec2 and WavLM, with speaker-disjoint and cross-dataset evaluation.
 
 ## Networking Labs
 
