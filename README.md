@@ -1,5 +1,10 @@
+# Project Portfolio
+
+Selected work spans customer support and research assistants, image and video analysis, audio classification, and network configuration labs.
+
 ## AI Engineering · RAG & LLM Systems
 
+- [Customer Services RAG](https://github.com/Tomm-2000/customer-services-rag) — Hybrid retrieval, cited answers, and human review. *(Private repository)*
 - [MedRAG](https://github.com/Tomm-2000/medical-diagnose-assisstant)
 - [GrantPilot AI](https://github.com/Tomm-2000/GrantPilot-AI)
 - [Semantic FAQ Chatbot](https://github.com/Tomm-2000/CodeAlpha_FAQChatbot)
@@ -14,7 +19,7 @@
 - [Digital Image Processing](https://github.com/Tomm-2000/digital-image-processing)
 - [K-Means Image Segmentation](https://github.com/Tomm-2000/kmeans-image-segmentation)
 - [Building Damage Assessment](https://github.com/Tomm-2000/building-damage-assessment)
-- - CIFAR-10 Classification
+- CIFAR-10 Classification
 
 ## Machine Learning & Statistics
 
@@ -22,6 +27,7 @@
 - [AI Music Generation](https://github.com/Tomm-2000/CodeAlpha_MusicGeneration)
 - [Applied Statistics](https://github.com/Tomm-2000/applied-statistics)
 - [Speech Emotion Recognition](https://github.com/Tomm-2000/speech-emotion-recognition)
+
 ## Networking Labs
 
 - [Cisco Packet Tracer Labs](https://github.com/Tomm-2000/packet-tracer-labs)
