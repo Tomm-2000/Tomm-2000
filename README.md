@@ -1,39 +1,46 @@
-# Project Portfolio
+# Hussain Yousef · Project Portfolio
 
-I build AI systems for knowledge retrieval, evidence-grounded answers, and human review. My work also covers computer vision, audio classification, and applied machine learning.
+I build tools that help people find evidence, interpret data, and make decisions. This page describes the problems I worked on, how the software approaches them, and what I tested. Source repositories for my own projects are maintained separately.
 
-## AI Engineering · RAG & LLM Systems
+## AI Engineering · Retrieval and Language Models
 
-- **[Customer Services RAG](https://github.com/Tomm-2000/customer-services-rag)** — Customer support platform that combines BM25, vector search, and knowledge graph retrieval. It generates cited answers with Gemini, routes uncertain cases to human review, and tracks response quality. *Private repository.*
-- **[MedRAG](https://github.com/Tomm-2000/medical-diagnose-assisstant)** — Graduation research prototype for stroke-related clinical decision support. Combines FAISS, BM25, and Neo4j retrieval with MedCPT reranking and source attribution.
-- **[GrantPilot AI](https://github.com/Tomm-2000/GrantPilot-AI)** — Grant reporting prototype that extracts evidence from documents, reconciles financial records, and helps generate reports. *Private repository.*
-- **[Semantic FAQ Chatbot](https://github.com/Tomm-2000/FAQChatbot)** — Retrieves existing FAQ answers using BGE embeddings and cosine similarity, with a fallback for low-confidence matches.
+**Customer Services RAG** helps a support agent answer questions from a knowledge base. It combines keyword search (BM25), semantic search, and knowledge-graph retrieval to find relevant material. Gemini drafts a reply with citations, and uncertain cases go to a human reviewer who can check the evidence.
 
-## Computer Vision
+**MedRAG · Graduation project** explores how to support stroke-related research questions with traceable answers. FAISS and BM25 retrieve candidate passages, Neo4j supplies graph context, and MedCPT reranks the biomedical evidence. A reviewer can trace an individual claim back to its source. The intended use is research and professional review.
 
-- **[Multi-Object Detection & Tracking](https://github.com/Tomm-2000/ObjectDetectionTracking)** — Uses YOLO11 and Deep SORT to detect objects in video and maintain track IDs across frames.
-- **[Building Damage Assessment](https://github.com/Tomm-2000/building-damage-assessment)** — Computer vision experiments on building damage in satellite imagery using xView2 data.
-- **[Plant Disease Classification](https://github.com/Tomm-2000/plant-disease-classification)** — Leaf-image classification experiments with a CNN and ResNet50. *Private repository.*
-- **[Traffic Sign Recognition](https://github.com/Tomm-2000/traffic-sign-recognition)** — Traffic sign classification with pretrained vision transformers.
-- **[MediaPipe Curl Counter](https://github.com/Tomm-2000/mediapipe-curl-counter)** — Counts exercise repetitions from webcam pose landmarks and elbow-angle thresholds.
-- **[YOLOv8 Object Detection](https://github.com/Tomm-2000/yolov8-object-detection)** — Object detection on still images and live webcam input.
-- **[Haar Face & Eye Detection](https://github.com/Tomm-2000/haar-face-eye-detection)** — Face and eye detection using pretrained OpenCV Haar cascades.
-- **[K-Means Image Segmentation](https://github.com/Tomm-2000/kmeans-image-segmentation)** — Segments images by clustering pixels by color.
-- **[Digital Image Processing](https://github.com/Tomm-2000/digital-image-processing)** — OpenCV coursework covering core image-processing techniques.
-- **CIFAR-10 Image Classification** — Transfer learning experiments for ten-class image recognition.
+**GrantPilot AI** helps a grant-reporting team bring supporting documents and financial records together. The prototype extracts evidence, reconciles records, and uses the resulting material to draft reports for review.
 
-## Machine Learning, Audio & Statistics
+**Semantic FAQ Chatbot** matches a user's wording to an existing FAQ, even when the question uses different words. It compares BGE embeddings using cosine similarity and falls back when the best match is weak.
 
-- **[Speech Emotion Recognition](https://github.com/Tomm-2000/speech-emotion-recognition)** — Research prototype using frozen Wav2Vec2 and WavLM encoders with lightweight classifiers. Uses speaker-disjoint evaluation and documents performance on an external dataset.
-- **[Movie Recommendation System](https://github.com/W0LF37/Movie-Recommendation-System)** — Movie recommendations using collaborative filtering.
-- **[AI Music Generation](https://github.com/Tomm-2000/MusicGeneration)** — MIDI sequence generation with a PyTorch LSTM. *Private repository.*
-- **[Applied Probability & Statistics](https://github.com/Tomm-2000/applied-statistics)** — Python coursework on probability, distributions, and statistical analysis.
+## Speech and Audio
 
-## Networking Labs
-
-- **[Cisco Packet Tracer Labs](https://github.com/Tomm-2000/packet-tracer-labs)** — Hands-on labs for IPv6 routing, VLAN configuration, and connectivity verification.
-
+**Speech Emotion Recognition** predicts one of eight vocal emotions from a recording. Two frozen speech encoders, wav2vec 2.0 and WavLM, each feed a small classifier. The system averages their class probabilities. Across five speaker-disjoint RAVDESS development folds, the ensemble reached a mean macro F1 of **0.757**, compared with **0.717** and **0.727** for the individual models. On a fixed external sample of 30 CREMA-D recordings it classified **7 of 30** correctly. This small external check illustrates how strongly performance can depend on the recording collection.
 
 ## Full-Stack Engineering
 
-- [Damascus Student Work & Training](https://github.com/Tomm-2000/damascus-student-work) — Arabic-first scheduling and job-sharing prototype for students and employers.
+**Damascus Student Work & Training** is an Arabic-first React, TypeScript, and Express prototype for students and employers. A scheduling engine accounts for classes, travel time, existing shifts, and overlapping availability. For example, two students available from 10–12 and 11–13 together cover three hours of a 10–14 shift. The employer can see the uncovered hour before assigning the shift. The prototype uses synthetic data and has 42 passing tests in the verified release.
+
+## Computer Vision
+
+| Project | What it does |
+| --- | --- |
+| Multi-Object Detection & Tracking | Pairs YOLO11 detections with Deep SORT so a viewer can follow the same object across successive video frames using its track ID. |
+| Building Damage Assessment | Explores building damage in xView2 satellite imagery, using computer vision to study damage visible after a disaster. |
+| Plant Disease Classification | Compares a CNN and ResNet50 for assigning a disease label to a leaf photograph. |
+| Traffic Sign Recognition | Uses pretrained vision transformers to classify traffic-sign images and explores transfer learning for visual recognition. |
+| MediaPipe Curl Counter | Turns webcam pose landmarks into elbow angles and uses angle thresholds to count completed repetitions. |
+| YOLOv8 Object Detection | Locates and labels objects in still images or live webcam input, returning a bounding box for each detection. |
+| Haar Face & Eye Detection | Uses pretrained OpenCV cascades to locate faces and eyes in an image. |
+| K-Means Image Segmentation | Groups pixels by color and reconstructs the image from those groups to show what color-based segmentation captures. |
+| Digital Image Processing | Collects OpenCV coursework exploring how processing operations change an image before higher-level visual analysis. |
+| CIFAR-10 Image Classification | Explores transfer learning for assigning small images to one of ten object categories. |
+
+## Machine Learning and Statistics
+
+- **Movie Recommendation System** uses collaborative filtering to suggest movies from patterns in users' preferences.
+- **AI Music Generation** models sequences of MIDI events with a PyTorch LSTM and generates musical continuations.
+- **Applied Probability & Statistics** uses Python to investigate probability distributions and interpret data through statistical exercises.
+
+## Networking Labs
+
+**Cisco Packet Tracer Labs** covers IPv6 routing, VLAN configuration, and connectivity checks. The exercises connect configuration choices to an observable outcome: which hosts can reach each other across the simulated network.
