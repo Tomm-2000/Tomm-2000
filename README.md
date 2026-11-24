@@ -32,3 +32,8 @@ I build AI systems for knowledge retrieval, evidence-grounded answers, and human
 ## Networking Labs
 
 - **[Cisco Packet Tracer Labs](https://github.com/Tomm-2000/packet-tracer-labs)** — Hands-on labs for IPv6 routing, VLAN configuration, and connectivity verification.
+
+
+## Full-Stack Engineering
+
+- [Damascus Student Work & Training](https://github.com/Tomm-2000/damascus-student-work) — Arabic-first scheduling and job-sharing prototype for students and employers.
